@@ -14,9 +14,10 @@
     --primary-color: #ffffff;
     --secondary-color: #2563eb;
     --accent-color: #f97316;
+    --bg-color: #211434;
 }
 
-.primery-button {
+.primary-button {
     background-image: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
@@ -29,10 +30,10 @@
 
 /* main styles */
 header {
-    background-color: #412567;
+    background-color: var(--bg-color);
     width: var(--primary-width);
     height: 92px;
-   border-bottom: 1px solid rgba(65, 37, 103, 1);
+   border-bottom: 1px solid rgb(75, 42, 122);
    margin: 0 auto;
    text-align: center;
 }
@@ -46,6 +47,31 @@ header {
 
 .gradient {
     background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.banner-section {
+    width: var(--primary-width);
+    height: 47.5rem;
+    margin: 0 auto;
+    background-image: url("../assets/hero-bg.png");
+    z-index: -99;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(75, 42, 122);
+}
+
+.banner-container {
+    width: 34.375rem;
+    height: 34.375rem;
+    /* border: 3px solid red; */
+    margin: 105px 525px;
+    padding-bottom: 6.25rem;
+}
+
+#first-img {
+    /* border: 2px solid red; */
+    margin-top: 101px;
+    position: relative;
 }
