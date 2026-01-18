@@ -32,15 +32,15 @@
 header {
     background-color: var(--bg-color);
     width: var(--primary-width);
-    height: 92px;
+    height: 5.75rem;
    border-bottom: 1px solid rgb(75, 42, 122);
    margin: 0 auto;
    text-align: center;
 }
 
 .logo {
-    width: 219px;
-    height: 32px;
+    width: 13.5rem;
+    height: 2rem;
     font-weight: 900;
     font-size: 2rem;
 }
@@ -74,4 +74,21 @@ header {
     /* border: 2px solid red; */
     margin-top: 101px;
     position: relative;
+}
+
+.hero-circle {
+    width: 21.875rem;
+    height: 21.875rem;
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        visibility: hidden;
+    }
+
+    .header-section,
+    .banner-section{
+        width: 100%;
+    }
+    
 }
