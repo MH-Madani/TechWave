@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/tailwind.css">
     <title>TechWave</title>
   </head>
+
   <body class="inter-font" id="t-c">
+
     <!-- header section -->
     <header>
       <section class="header-section">
@@ -24,7 +26,7 @@
           </div>
           <div class="navbar">
             <nav>
-              <ul class="display">
+              <ul class="display ">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
@@ -65,5 +67,51 @@
         </div>
       </div>
     </section>
+
+    <!-- why choose section -->
+     <section class="why-choose-section ">
+      <div class="why-choose-container flex flex-col justify-between items-center">
+        <h2 class="section-title text-5xl text-white font-bold text-center">Why Choose TechWave</h2>
+
+        <div class="card-container grid grid-cols-3 grid-rows-3">
+          <div class="card row-span-2">
+            <img src="./assets/headphone.png" alt="" />
+            <h3 class="card-title text-2xl">Premium Audio Quality</h3>
+            <p class="card-description">
+              Stay ahead with the latest trends and insights from industry
+              experts.</p>
+          </div>
+          <div class="card col-span-2">
+            <img src="./assets/device.png" alt="" />
+            <h3 class="card-title text-2xl">Mobile Friendly</h3>
+            <p class="card-description">
+              Listen on the go with our mobile-friendly platform and seamless
+              experience.</p>
+          </div>
+          <div class="card col-span-2">
+            <img src="./assets/location.png" alt="" />
+            <h3 class="card-title  text-2xl">Global Community</h3>
+            <p class="card-description">
+              Connect with a global community of tech enthusiasts and professionals
+              </p>
+          </div>
+          <div class="card col-span-2">
+            <img src="./assets/zap-fast.png" alt="" />
+            <h3 class="card-title  text-2xl">Exclusive Interviews</h3>
+            <p class="card-description">
+              Stay ahead with the latest trends and insights from industry
+              experts.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/resource.png" alt="" />
+            <h3 class="card-title  text-2xl">Resourceful Content</h3>
+            <p class="card-description">
+              Stay ahead with the latest trends and insights from industry
+              experts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
