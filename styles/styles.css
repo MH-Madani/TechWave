@@ -1,5 +1,9 @@
-*{
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 .inter-font {
@@ -8,87 +12,133 @@
   font-style: normal;
 }
 
-/* shared styles */
-:root{
-    --primary-width: 100rem;
-    --primary-color: #ffffff;
-    --secondary-color: #2563eb;
-    --accent-color: #f97316;
-    --bg-color: #211434;
+body {
+  color: var(--primary-color);
+  width: 100%;
 }
+
+/* shared styles */
+:root {
+  --primary-width: calc(100% - 400px);
+  --primary-height: 100vh;
+  --primary-margin: 0 auto;
+  --primary-color: #ffffff;
+  --secondary-color: #00ff88;
+  --bg-color: #412567;
+  --secondary-bg-color: #230e3d;
+  --another-bg-color: #1a0b2e;
+  --primary-font-size: 1rem;
+}
+
+
 
 .primary-button {
-    background-image: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    border-radius: 10000px;
+  background-image: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 10000px;
 }
-
 
 /* main styles */
 header {
-    background-color: var(--bg-color);
-    width: var(--primary-width);
-    height: 5.75rem;
-   border-bottom: 1px solid rgb(75, 42, 122);
-   margin: 0 auto;
-   text-align: center;
+  background-color: var(--another-bg-color);
+  width: 100%;
+  border-bottom: 1px solid rgb(75, 42, 122);
 }
-
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: var(--primary-width);
+  margin: var(--primary-margin);
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid red; */
+  height: 5.75rem;
+}
+/* important */
 .logo {
-    width: 13.5rem;
-    height: 2rem;
-    font-weight: 900;
-    font-size: 2rem;
+  width: 13.69rem;
+  height: 2rem;
+  line-height: 1rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 .gradient {
-    background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(#f7e93f, #fb09b4, #9100f8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* end */
+nav .display {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
 }
 
 .banner-section {
-    width: var(--primary-width);
-    height: 47.5rem;
-    margin: 0 auto;
-    background-image: url("../assets/hero-bg.png");
-    z-index: -99;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid rgb(75, 42, 122);
+  width: var(--primary-width);
+  height: 47.5rem;
+  margin: 0 auto;
+  background-image: url("../assets/hero-bg.png");
+  z-index: -99;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(75, 42, 122);
 }
 
 .banner-container {
-    width: 34.375rem;
-    height: 34.375rem;
-    /* border: 3px solid red; */
-    margin: 105px 525px;
-    padding-bottom: 6.25rem;
+  width: 34.375rem;
+  height: 34.375rem;
+  /* border: 3px solid red; */
+  margin: 105px 525px;
+  padding-bottom: 6.25rem;
 }
 
 #first-img {
-    /* border: 2px solid red; */
-    margin-top: 101px;
-    position: relative;
+  /* border: 2px solid red; */
+  margin-top: 101px;
+  position: relative;
 }
 
 .hero-circle {
-    width: 21.875rem;
-    height: 21.875rem;
+  width: 21.875rem;
+  height: 21.875rem;
 }
 
 @media screen and (max-width: 576px) {
-    nav {
-        visibility: hidden;
+    nav,
+    #header-btn {
+        display: none;
     }
+    .menu-icon{
+        display: block;
+    }
+    :root {
+        --primary-width: 90%;
+    }
+}
 
-    .header-section,
-    .banner-section{
-        width: 100%;
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+    :root {
+        --primary-width: 90%;
     }
-    
+}
+@media screen and (max-width: 646px) {
+    nav {
+        display: none;
+    }
 }

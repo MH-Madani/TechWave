@@ -9,33 +9,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/tailwind.css" />
     <title>TechWave</title>
   </head>
-  <body class="inter-font text-white">
+  <body class="inter-font" id="t-c">
     <!-- header section -->
-    <header class="header-section flex justify-between items-center px-52 py-7 ">
-      <div class="logo">
-        <h1>Tech<span class="gradient">Wave</span></h1>
-      </div>
-      <div class="navbar">
-        <nav>
-          <ul class="flex justify-between gap-8">
-            <li><a href="">About</a></li>
-            <li><a href="">Episodes</a></li>
-            <li><a href="">Host</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="btn">
-        <button class="primary-button">Subscribe</button>
-      </div>
+    <header>
+      <section class="header-section">
+        <div class="header-container">
+          <div class="logo">
+            <h1>Tech<span class="gradient">Wave</span></h1>
+          </div>
+          <div class="navbar">
+            <nav>
+              <ul class="display">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <button id="header-btn" class="primary-button">Subscribe</button>
+
+          <img src="./assets/hamburger-menu.png" alt="" class="menu-icon">
+        </div>
+      </section>
     </header>
 
     <!-- banner section -->
-     <!-- <section class="banner-section">
+    <!-- <section class="banner-section">
     <div class="banner-container flex flex-col justify-center items-center">
          <div id="first-img" class="img">
             <img class="hero-circle" src="./assets/hero-circle.png" alt="">
