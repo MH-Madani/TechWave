@@ -17,12 +17,13 @@
 body {
   color: var(--primary-color);
   width: 100%;
+  height: 100vh;
 }
 
 /* shared styles */
 :root {
   --primary-width: calc(100% - 400px);
-  --primary-height: 100vh;
+  --primary-height: 40.38rem;
   --primary-margin: 0 auto;
   --primary-color: #ffffff;
   --secondary-color: #00ff88;
@@ -30,6 +31,24 @@ body {
   --secondary-bg-color: #230e3d;
   --another-bg-color: #1a0b2e;
   --primary-font-size: 1rem;
+}
+
+.about-section,
+.featured-section,
+.meet-section {
+  width: 100%;
+  height: var(--primary-height);
+  background-color: var(--another-bg-color);
+}
+
+.about-container,
+.featured-container,
+.meet-container {
+  width: var(--primary-width);
+  margin: var(--primary-margin);
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+
 }
 
 .section-title h2 {
@@ -41,7 +60,7 @@ body {
   text-align: center;
 }
 
-.section-description {
+.section-description p {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.8;
@@ -92,7 +111,7 @@ header {
 }
 /* important */
 .logo {
-  width: 13.69rem;
+  max-width: 13.69rem;
   height: 2rem;
   line-height: 1rem;
   font-weight: 900;
@@ -162,28 +181,36 @@ nav ul li a {
 /* why choose section */
 .why-choose-section {
   background: var(--secondary-bg-color);
-  width: 100%;
-  height: 70.63rem;
+  max-width: 100%;
+  height: 80.63rem;
   border: 1px solid rgb(75, 42, 122);
   /* border: 4px solid red; */
 }
 
 .why-choose-container {
   background: var(--secondary-bg-color);
-  width: var(--primary-width);
+  max-width: var(--primary-width);
   height: 80%;
   margin: var(--primary-margin);
   margin: 7.5rem 12.5rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+.card-container {
+  /* border: 2px solid red; */
+  gap: 1.25rem;
 }
 
 .card-container .card {
-  /* border: 2px solid red; */
   border-radius: 2.5rem;
   padding: 2.5rem;
   background: #351165;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   margin: 2.5rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+
 }
 .card-container .card .card-title {
   font-weight: 700;
@@ -198,9 +225,11 @@ nav ul li a {
   opacity: 0.6;
   font-weight: 400;
   color: var(--primary-color);
+  max-width: 85%;
 }
 
 @media screen and (max-width: 576px) {
+  
   nav,
   #header-btn {
     display: none;
@@ -209,40 +238,6 @@ nav ul li a {
     display: block;
   }
   :root {
-    --primary-width: 90%;
-  }
-  .banner-container {
-    width: 90%;
-    height: 24.13rem;
-    margin-top: 2rem;
-  }
-  .banner-section .banner-container .first-img img{
-    width: 18rem;
-    height: 18rem;
-    margin-top: 3rem;
-  }
-  .banner-section{
-    background-image: url(../assets/hero-bg.png);
-    background-position: center;
-   background-size: cover;
-   width: 100%;
-
-  }
-}
-
-@media screen and (min-width: 577px) and (max-width: 1200px) {
-  :root {
-    --primary-width: 90%;
-  }
-  .banner-section{
-    background-position: center;
-   background-size: cover;
-   width: 100%;
-
-  }
-}
-@media screen and (max-width: 646px) {
-  nav {
-    display: none;
+    --primary-width: 95%;
   }
 }
