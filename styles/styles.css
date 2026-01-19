@@ -39,6 +39,7 @@ body {
   width: 100%;
   height: var(--primary-height);
   background-color: var(--another-bg-color);
+  /* border: 2px solid saddlebrown; */
 }
 
 .about-container,
@@ -48,6 +49,7 @@ body {
   margin: var(--primary-margin);
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+   border: 2px solid saddlebrown;
 
 }
 
