@@ -14,6 +14,10 @@
   font-style: normal;
 }
 
+#ratings {
+  margin-top: 10rem;
+}
+
 body {
   color: var(--primary-color);
   width: 100%;
@@ -23,7 +27,7 @@ body {
 /* shared styles */
 :root {
   --primary-width: calc(100% - 400px);
-  --primary-height: 40.38rem;
+  --primary-height: 42.38rem;
   --primary-margin: 0 auto;
   --primary-color: #ffffff;
   --secondary-color: #00ff88;
@@ -31,6 +35,13 @@ body {
   --secondary-bg-color: #230e3d;
   --another-bg-color: #1a0b2e;
   --primary-font-size: 1rem;
+}
+
+.rating-card {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.63rem;
 }
 
 .about-section,
@@ -49,7 +60,7 @@ body {
   margin: var(--primary-margin);
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
-   border: 2px solid saddlebrown;
+   /* border: 2px solid saddlebrown; */
 
 }
 
@@ -57,18 +68,22 @@ body {
   font-size: 3.75rem;
   font-weight: 800;
   margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  
   line-height: 4.56rem;
   text-align: center;
 }
 
-.section-description p {
+.section-description {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.8;
   text-align: center;
   line-height: 1.19rem;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  /* border: 2px solid red; */
+  /* margin-left: 5rem; */
 }
 
 .primary-button {
