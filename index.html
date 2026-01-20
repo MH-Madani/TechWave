@@ -3,169 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>TechWave Podcast</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/tailwind.css" />
-    <title>TechWave</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-
-  <body class="inter-font" id="t-c">
-    <!-- header section -->
+  <body>
+    <!-- Header -->
     <header>
-      <section class="header-section">
-        <div class="header-container">
-          <div class="logo">
-            <h1 class="">Tech<span class="gradient">Wave</span></h1>
-          </div>
-          <div class="navbar">
-            <nav>
-              <ul class="display">
-                <li><a href="">About</a></li>
-                <li><a href="">Episodes</a></li>
-                <li><a href="">Host</a></li>
-              </ul>
-            </nav>
-          </div>
+      <div class="container header-container">
+        <div class="logo">Tech<span class="gradient">Wave</span></div>
+        <ul class="nav-links">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
 
-          <button id="header-btn" class="primary-button">Subscribe</button>
-
-          <img src="./assets/hamburger-menu.png" alt="" class="menu-icon" />
-        </div>
-      </section>
+        <button class="primary-button">Subscribe</button>
+      </div>
     </header>
 
-    <!-- banner section -->
-    <section class="banner-section">
-      <div class="banner-container">
-        <div class="first-img">
-          <img src="./assets/hero-circle.png" alt="" />
+    <!-- Hero Section -->
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-image">
+            <img src="../assets/hero-circle.png" alt="" />
+          </div>
+          <img src="../assets/microphone.png" alt="" class="mic" />
+          <img src="../assets/Frame 2087326323.png" alt="" class="badge" />
+          <h1 class="section-title">TechWave</h1>
+          <p class="section-description">
+            Your daily dose of tech insights, productivity hecks, and personal
+            growth.
+          </p>
+          <div class="hero-buttons">
+            <button class="primary-button">Listen On Spotify</button>
+            <button class="secondary-button">Subscribe</button>
+          </div>
         </div>
-        <div class="second-img">
-          <img class="" src="./assets/microphone.png" alt="" />
-        </div>
-        <div class="section-title">
-          <h2 class="">TechWave</h2>
-          <p class="section-description mb-4">
-            Your daily dose of tech insights, productivity tips, and personal
-            growth
+      </section>
+
+      <!--About Section  -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About The Podcast</h2>
+          <p class="section-description">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We broke down complected topics into digestible
+            insights, explore productivity strategies that actually works, and
+            share stories from personal growth from industry leaders.
+            <br /><br />
+            Join thousands of young professionals and tech enthusiasts who
+            starts their day with TechWave.
           </p>
         </div>
-        <div class="button flex gap-2">
-          <button class="primary-button">Listen On Spotify</button>
-          <button class="secondary-button">Subscribe</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section -->
-    <section class="about-section">
-      <div class="about-container flex flex-col justify-between items-center">
-        <div class="">
-          <h2 class="text-5xl text-white font-bold text-center ">About The Podcast</h2>
-          <div class="section-description">
-            <p class="section-description text-center items-center">TechWave is your go to podcast for staying ahead in the fast paced world of
-              Consectetur adipisicing elit. Incidunt error <br>quibusdam temporibus ab modi harum molestiae iste assumenda illo, unde adipisci consequuntur veritatis animi saepe labore accusantium nobis? Error, <br><br><br>Joined thousands of young and proffesionals everyday who start and begin with TechWave.
-            </p>
-          </div>
-        </div>
-
-        <div id="ratings" class="flex gap-20">
-          <div class="card">
-            <h1 class="rating-card">150K+</h1>
-            <p>MONTHLY LISTENERS</p>
-          </div>
-          <div class="card">
-            <h1 class="rating-card">200+</h1>
-            <p>EPISODES PUBLISHED</p>
-          </div>
-          <div class="card">
-            <h1 class="rating-card">4.9</h1>
-            <p>AVERAGE RATING</p>
-          </div>
-          <div class="card">
-            <h1 class="rating-card">50+</h1>
-            <p>INDUSTRY EXPERTS</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- why choose section -->
-    <section class="why-choose-section">
-      <div
-        class="why-choose-container flex flex-col justify-between items-center gap-10"
-      >
-        <h2 class="text-5xl text-white font-bold text-center">
-          Why Choose TechWave
-        </h2>
-
-        <div class="card-container grid grid-cols-3 grid-rows-3">
-          <div class="card row-span-2">
-            <img src="./assets/headphone.png" alt="" />
-            <h3 class="card-title text-2xl">Premium Audio Quality</h3>
-            <p class="card-description">
-              Experience crystal-clear sound with our high-quality audio
-              production and editing and mastering and mixing, ensuring an
-              immersive listening experience.
-            </p>
-          </div>
-          <div class="card col-span-2">
-            <img src="./assets/device.png" alt="" />
-            <h3 class="card-title text-2xl">Mobile Friendly</h3>
-            <p class="card-description">
-              Listen on the go with our mobile-friendly platform and seamless
-              experience.
-            </p>
-          </div>
-          <div class="card col-span-2">
-            <img src="./assets/location.png" alt="" />
-            <h3 class="card-title text-2xl">Global Community</h3>
-            <p class="card-description">
-              Connect with a global community of tech enthusiasts and
-              professionals
-            </p>
-          </div>
-          <div class="card col-span-2">
-            <img src="./assets/zap-fast.png" alt="" />
-            <h3 class="card-title text-2xl">Exclusive Interviews</h3>
-            <p class="card-description">
-              Stay ahead with the latest trends and insights from industry
-              experts.
-            </p>
-          </div>
-          <div class="card">
-            <img src="./assets/resource.png" alt="" />
-            <h3 class="card-title text-2xl">Resourceful Content</h3>
-            <p class="card-description">
-              Stay ahead with the latest trends and insights from industry
-              experts.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- featured section -->
-    <section class="featured-section">
-      <div class="featured-container"></div>
-    </section>
-
-    <!-- meet section -->
-    <section class="meet-section">
-      <div class="meet-container"></div>
-    </section>
-
-    <!-- footer section -->
-    <footer>
-      <section class="footer-section">
-        <div class="footer-container"></div>
       </section>
-    </footer>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number">150K+</div>
+          <div class="stat-label">MONTHLY LISTENERS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">EPISODES PUBLISHED</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4.9 ★</div>
+          <div class="stat-label">AVERAGE RATING</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">INDUSTRY EXPERTS</div>
+        </div>
+      </div>
+
+      <!-- feature section -->
+      <section id="feature" class="section features">
+        <div class="container">
+          <h2 class="section-title">Why Choose TechWave</h2>
+
+          <div class="features-grid">
+            <div style="grid-row: 1 / 3;" class="feature-card">
+              <img src="../assets/headphone.png" alt="" />
+              <h3 class="card-title">Premium Audio Quality</h3>
+              <p class="card-description">
+                Experience crystal-clear sound with our high-quality audio
+                production and editing and mastering and mixing, ensuring an
+                immersive listening experience.Join thousands of young professionals and tech enthusiasts who
+            starts their day with TechWave.
+              </p>
+            </div>
+            <div style="grid-column: 2 / span 3;" class="feature-card">
+              <img src="../assets/device.png" alt="" />
+              <h3  class="card-title">Mobile Friendly</h3>
+              <p class="card-description">
+                Listen on the go with our mobile-friendly platform and seamless
+                experience.
+              </p>
+            </div>
+            <div style="grid-column: 2 / span 3;" class="feature-card">
+              <img src="../assets/location.png" alt="" />
+              <h3  class="card-title">Global Community</h3>
+              <p class="card-description">
+                Connect with a global community of tech enthusiasts and
+                professionals
+              </p>
+            </div>
+            <div style="grid-column: span 2 / 3;" class=" feature-card">
+              <img src="../assets/zap-fast.png" alt="" />
+              <h3  class="card-title">Exclusive Interviews</h3>
+              <p class="card-description">
+                Stay ahead with the latest trends and insights from industry
+                experts.
+              </p>
+            </div>
+            <div style="grid-column: 3 / span 3;" class="feature-card">
+              <img src="../assets/resource.png" alt="" />
+              <h3  class="card-title">Resourceful Content</h3>
+              <p class="card-description">
+                Stay ahead with the latest trends and insights from industry
+                experts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- episodes section -->
+       <section class="section" id="episodes">
+        <div class="container">
+            <h2 class="section-title">Featured Episodes</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div>
+                  <iframe class="i-frame" width="" height="" src="https://www.youtube.com/embed/b0bdKLiLV0M?si=aXd7uuIOJMRcVyjf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h3 class="episode-title">The Future Of AI In Everyday Life</h3>
+                <p class="section-description just">TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We broke down complected topics into digestible
+            insights, explore productivity strategies that actually works, and
+            share stories from personal growth from industry leaders.</p>
+              </div>
+              <div class="feature-card">
+                <div><iframe class="i-frame" width="" height="" src="https://www.youtube-nocookie.com/embed/RO14DsVxZtM?si=DsqaFxAXFauFqGvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <h3 class="episode-title">Building Better Habits For Remote Work</h3>
+                <p class="section-description just">TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We broke down complected topics into digestible
+            insights, explore productivity strategies that actually works, and
+            share stories from personal growth from industry leaders.</p>
+              </div>
+              <div class="feature-card">
+                <div><iframe  class="i-frame" width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/xjKzC6r5q5s?si=ZEvRjSOthrp_VGYr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <h3 class="episode-title">Career Growth In Tech</h3>
+                <p class="section-description just">TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We broke down complected topics into digestible
+            insights, explore productivity strategies that actually works, and
+            share stories from personal growth from industry leaders.</p>
+              </div>
+            </div>
+        </div>
+       </section>
+    </main>
   </body>
 </html>
