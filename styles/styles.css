@@ -47,20 +47,24 @@ body {
 .about-section,
 .featured-section,
 .meet-section {
-  width: 100%;
-  height: var(--primary-height);
+   max-width: 100%;
+  max-height: var(--primary-height);
   background-color: var(--another-bg-color);
-  /* border: 2px solid saddlebrown; */
+  background-size: cover;
+  border: 2px solid saddlebrown;
 }
 
 .about-container,
 .featured-container,
-.meet-container {
+.meet-container, .banner-container
+ {
   width: var(--primary-width);
   margin: var(--primary-margin);
+  height: var(--primary-height);
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
-   /* border: 2px solid saddlebrown; */
+  margin-bottom: 7.5rem;
+  border: 2px solid saddlebrown;
 
 }
 
