@@ -82,8 +82,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.burger {
-  display: hidden;
+#burger {
+  display: none;
 }
 .logo {
   line-height: 1.5rem;
@@ -325,8 +325,9 @@ footer .footer-container .footer-content .ft-links a {
   .header-container{
     gap: 20xp;
   }
-  .burger{
+  #burger{
     display: block;
+    visibility: visible;
   }
   .nav-links, .nav-btn {
     visibility: hidden;
@@ -369,5 +370,14 @@ footer .footer-container .footer-content .ft-links a {
 }
 .badge {
   left: 350px;
+}
+#footer-flex {
+  flex-wrap: wrap;
+}
+.stats{
+  padding: 40px 100px 100px 100px;
+}
+.stat-card{
+  padding:30px auto;
 }
 }
